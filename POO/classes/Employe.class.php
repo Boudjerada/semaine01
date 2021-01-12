@@ -21,28 +21,28 @@ class Employe{
 
     // Mutateur : définit/modifie la valeur passée en argument à l'attribut 
     public function setNom($sNom){
-        return $this->_nom = $sNom;
+         $this->_nom = $sNom;
     }
     public function setPrenom($sPrenom){
-        return $this->_prenom = $sPrenom;
+         $this->_prenom = $sPrenom;
     }
     public function setDateEmbauche($sD_embauche){
-        return $this->_dateEmbauche = DateTime::createFromFormat("d/m/Y",$sD_embauche);
+         $this->_dateEmbauche = DateTime::createFromFormat("d/m/Y",$sD_embauche);
     } 
     public function setFonction($sFonction){
-        return $this->_fonction = $sFonction;
+        $this->_fonction = $sFonction;
     } 
     public function setSalaire($sSalaire){
-        return $this->_salaire = $sSalaire;
+         $this->_salaire = $sSalaire;
     } 
     public function setService($sService){
-        return $this->_service = $sService;
+         $this->_service = $sService;
     }
     public function setAgence($sAgence){
-        return $this->_agence = $sAgence ;
+         $this->_agence = $sAgence ;
     }
     public function setEnfants($sEnfants){
-        return $this->_enfants = $sEnfants;
+         $this->_enfants = $sEnfants;
     }
     
     // Accesseur : renvoie la valeur d'un attribut  

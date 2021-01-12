@@ -9,19 +9,19 @@ class Agence{
 
     // Mutateur : définit/modifie la valeur passée en argument à l'attribut 
     public function setNom($sNom){
-        return $this->_nom = $sNom;
+         $this->_nom = $sNom;
     }
     public function setAdresse($sAdresse){
-        return $this->_adresse = $sAdresse;
+         $this->_adresse = $sAdresse;
     }
     public function setCodePostal($sCodePostal){
-        return $this->_codePostal = $sCodePostal;
+        $this->_codePostal = $sCodePostal;
     } 
     public function setVille($sVille){
-        return $this->_ville = $sVille;
+         $this->_ville = $sVille;
     }
     public function setModeRestauration($sModeRestauration){
-        return $this->_modeRestauration = $sModeRestauration;
+         $this->_modeRestauration = $sModeRestauration;
     }
     
     // Accesseur : renvoie la valeur d'un attribut  

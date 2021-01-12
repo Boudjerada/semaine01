@@ -44,7 +44,7 @@ class Employe4Test extends TestCase
 
     // Commentez ces 2 fonctions si vous n'executez que ce fichier de test
     
-    public function testNombreEmploye1(){
+   public function testNombreEmploye1(){
         $this->assertEquals($this->nombreEmployeTestComplet,Employe::$nbrEmploye);
     }
     

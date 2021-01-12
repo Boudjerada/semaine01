@@ -15,7 +15,7 @@ class Employe{
 
     function __construct() 
    {
-    Employe::$nbrEmploye++;
+    self::$nbrEmploye++;
    }
 
 
@@ -27,7 +27,7 @@ class Employe{
         return $this->_prenom = $sPrenom;
     }
     public function setDateEmbauche($sD_embauche){
-        return $this->_dateEmbauche = $sD_embauche;
+        return $this->_dateEmbauche = DateTime::createFromFormat("d/m/Y",$sD_embauche);
     } 
     public function setFonction($sFonction){
         return $this->_fonction = $sFonction;
@@ -77,7 +77,7 @@ class Employe{
     public function getAnciennete(){
         setlocale(LC_TIME, ['fr', 'fra', 'fr_FR']);
         $today = new DateTime();
-        $embauche = DateTime::createFromFormat("d/m/Y",$this->_dateEmbauche);
+        $embauche = $this->getDateEmbauche();
         $interval =$today->diff($embauche);
         return($interval->format('%Y'));
     }
